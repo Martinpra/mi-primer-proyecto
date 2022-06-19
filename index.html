@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Primer actividad</title>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-escale=1">
+	<link  href="estilos.css" rel="stylesheet"/>
+	
+</head>
+<body>
+	
+	<div id="contenedor">
+<header id="cabecera">
+
+	<div id="marca">
+	 <h3>Pralong Danilo Martin <br>
+	 Tecnico Superior en Programacion</h3>
+	</div>
+	<nav id="nav">
+		<ul id="botonera">
+			<li><a href="#">Presentacion</a></li>
+			<li><a href="#">Formacion</a></li>
+			<li><a href="#">Contacto</a></li>
+	
+		</ul>
+	</nav>
+</header>
+<section id="contenido">
+	
+	<div id="caja_cont3">
+		<a href="#contenido" onmouseover="mostrar('id_parrafo')" onmouseout="ocultar('id_parrafo')">
+		
+			<h2 style="text-align: center; color: aliceblue">Presentación</h2>
+
+	</a>
+	
+ 	</div>
+	
+	<div id="caja_cont4">	
+		<a href="#contenido" onmouseover="mostrar('id_parrafo1')" onmouseout="ocultar('id_parrafo1')">
+		
+			<h2 style="text-align: center; color: aliceblue">Formacion Academica</h2>
+		
+	</a>
+</div>
+	<div id="caja_cont5">	<a href="#contenido" onmouseover="mostrar('id_parrafo2')" onmouseout="ocultar('id_parrafo2')">
+		
+		<h2 style="text-align: center; color: aliceblue;">Antecedentes Laborales</h2>
+		
+	</a>
+</div>
+	<article id="nuevo_cont">
+	<div><p id="id_parrafo"  style="display:none">
+		<strong>Datos Personales</strong><br>
+		Nombre y apellido: Pralong Danilo Martin<br>
+		Edad: 43 años<br>
+		Vivo en Santa Fe Provincia de Santa Fe<br>
+		<br>
+		<br>
+		</p>
+	</div>
+	<div><p id="id_parrafo1" style="display:none"><strong>Formacion</strong><br>
+		Tecnico Superior en Programacion(UTN)<br>
+	    Cursando Licenciatura en Gestion de Tecnologias de Informacion(UCSF)<br>
+		Diplomatura en Programacion WEb Full Stack(UTN)<br>
+		Diplomatura en Programacion NET Full Stack(UTN)<br>
+		Curso de Programacion en Java(UTN)<br>
+		
+
+	</p></div>
+	<div><p id="id_parrafo2" style="display:none"><strong>Experiencia Laboral</strong><br>
+		Desempeño docente en nivel secundario<br>
+		Desempeño docente en nivel Terciario<br>
+	Soporte Tecnico en Subsecretaria de Derechos Humanos en provincia de Entre Rios<br>
+	Webmaster en Instituto Superior Profesorado N° 67 Santa Fe <br>
+	Soporte Tecnico y configuracion de redes en institutciones Educativas<br>
+
+	</p>
+	</div>
+</section>
+<section id="contenido2">
+	
+	<div class="caja_cont1">
+	</div>	
+</section>
+
+<section id="contenido3">
+
+		  
+	<div id="nueva_seccion">
+		
+			<div class="form-control">
+			  
+				<h2 style="text-align: center;">Datos para su consulta</h2>
+				<form name="registracion" method="get">
+					<div>
+					
+					<h6><input id = 'nombre' name="nombre" type="text"   placeholder="Nombre" maxlength="30" required class="form-control"></h6></div>
+					<div>
+						<h6><input id = 'correo' name="correo" type="email"  placeholder="Correo Electronico" required maxlength="30" class="form-control"><h6></h6></div>
+					<div>
+						<h6><input  id = 'mensaje'  placeholder="Detalle de su Consulta"  maxlength="50" requerid class="form-control"></h6>
+		</div>
+		<h6><input type="submit" id="send" onclick="return validarformulario();"  value="Enviar"  class="form-control"></h6>
+			   </form>
+             		  
+			<div id='error'></div>
+			</div>
+  </div>
+	
+  
+
+</section>
+
+<footer id="pie">
+	<div id="nota_pie">
+		<p><strong>Para más consultas</strong><br>Direccion: 12 de Octubre 9000<br>Telefono:4899635</p>
+		
+		</div>
+	<nav id="botones_redes">
+	
+		<ul id="botonera_redes">
+		
+			<li>
+				<a href="#">
+				  <img src="imagenes/logo_face.jpg"></a></li>
+			<li><a href="#"><img src="imagenes/logo_insta.jpg"></a></li>
+	
+		</ul>
+	
+	</nav>
+
+</footer>
+
+</div>
+<script type="text/javascript" src="unidad8.js"></script>
+<script type="text/javascript" src="validar.js"></script>
+	</body>
+</html>
